@@ -4,6 +4,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
+@keyframes bounceArrow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -141,4 +147,14 @@ img.socialIcon {
 
 .container .box {
   animation: "1s ease-out 0s 1 slideIn";
+}
+
+@keyframes bounceArrow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.arrow {
+  animation: bounceArrow 1s infinite;
 }
