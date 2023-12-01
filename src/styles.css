@@ -140,5 +140,5 @@ img.socialIcon {
 }
 
 .container .box {
-  animation: slideIn 0.5s ease-in-out;
+  animation: "1s ease-out 0s 1 slideIn";
 }
