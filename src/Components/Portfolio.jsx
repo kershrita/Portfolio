@@ -18,8 +18,7 @@ const projectList = [
   },
   {
     title: "Human Activity Recognition",
-    description:
-      "A system capable of recognizing human activities based on sensor data.",
+    description: "A system capable of recognizing human activities based on sensor data.",
     url: "https://github.com/kershrita/Human-Activity-Recognition",
   },
   {
@@ -51,7 +50,7 @@ const Portfolio = () => {
               <p className="small">{project.description}</p>
             </div>
           ))}
-      </div>
+        </div>
       </div>
     </section>
   );
