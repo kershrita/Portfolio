@@ -1,12 +1,19 @@
+
 import React from "react";
 import arrowSvg from "../images/down-arrow.svg";
 import PropTypes from "prop-types";
 
 import image from "../images/christopher-burns.jpg";
 
-const imageAltText = "Adult female in office setting leaning against a glass wall while holding a platinum Microsoft Surface Pro 7 in tablet mode preparing to write with Microsoft Surface Pen";
+const imageAltText =
+  "Adult female in office setting leaning against a glass wall while holding a platinum Microsoft Surface Pro 7 in tablet mode preparing to write with Microsoft Surface Pen";
 
 const Home = ({ name, title }) => {
+  const handleArrowClick = () => {
+    const section = document.getElementById("about");
+    section.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section id="home" className="min-height">
       <img className="background" src={image} alt="" />
@@ -15,7 +22,7 @@ const Home = ({ name, title }) => {
           backgroundColor: "white",
           width: "50%",
           padding: "4rem",
-          margin: "3rem auto",
+          margin: "8rem auto",
           textAlign: "center",
         }}
       >
@@ -29,8 +36,9 @@ const Home = ({ name, title }) => {
           id="arrow"
           className="arrow"
           src={arrowSvg}
-          style={{ height: "3rem", width: "3rem" }}
+          style={{ height: "3rem", width: "3rem", cursor: "pointer" }}
           alt={imageAltText}
+          onClick={handleArrowClick}
         />
       </div>
     </section>
