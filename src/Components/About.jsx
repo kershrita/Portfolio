@@ -19,7 +19,7 @@ const skillsList = [
 
 
 const detailOrQuote =
-  "I am a self-motivated and hardworking individual with a keen interest in Data Science and Machine Learning. I am passionate about learning new technologies and applying them to solve real-world problems.";
+  "I like to make data breathe and come alive.";
 
 const About = () => {
   return (
